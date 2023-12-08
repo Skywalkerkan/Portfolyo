@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebab4c16ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu" style="right: -200px;">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fas fa-times" onclick="closemenu()" style="display: none;"></i></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm Erkan</h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pp.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Erkan Coşar, a mobile app developer. Although my focus is on the iOS platform, I've also developed my skills in other technologies like Kotlin. I'm not just a developer; I'm also someone who creates creative and innovative solutions. My journey in app development has involved numerous projects, each of which has been a new learning opportunity for me. Prioritizing user experience, I strive to understand users' needs in every project and add value to them. In a world where technology rapidly evolves, I've dedicated myself to continuous learning and self-improvement. This passion allows me to offer better and more innovative solutions in each project. Besides turning coding into a passion, I also enjoy generating new ideas, solving problems, and using technology to simplify people's daily lives."</p>
+
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab": id="skills">
+                <ul>
+                    <li><span>UI?UX</span><br>Designing App Interfaces</li>
+                    <li><span>App Development</span><br>Building Android/iOS Apps</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span>Konya Food And Agriculture University</span><br>
+                        Electrical and Electronics Engineering
+                    </li>
+                    <li>
+                        <span>techcareer.net</span><br>
+                        Android Developer Bootcamp With KOTLIN
+                        <a href="https://certificates.techcareer.net/tr/verify/15221291816588?ref=email" target="_blank">
+                            <img src="sertifika.png" alt="Certificate Image" style="display: none;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------- services ----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX tasarımında odaklı ve kullanıcı dostu arayüzler oluşturarak, prototip geliştirme, iyileştirmeler ve marka uyumluluğu konusunda hizmet sunuyorum.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Uygulama tasarımında öncelikli olarak kullanıcı deneyimini göz önünde bulundurarak, işlevsel ve marka uyumlu çözümler geliştiriyorum.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!------Portfolio----->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/MovieKapak.png">
+                <div class="layer">
+                    <h3>Movies App</h3>
+                    <p>The Movie app is a comprehensive film application designed with a protocol-oriented approach based on the data provided by the TMDB API. With its rich features and user-friendly interface, the app offers film enthusiasts the opportunity to explore a wide range of movies. Utilizing the latest data from TMDB, users can quickly and effectively discover the latest releases, popular works, and much more.</p>
+                    <a href="https://github.com/Skywalkerkan/MVVMProtocolOrientedMovieApp" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/deezerKapak.png">
+                <div class="layer">
+                    <h3>Dezeer App</h3>
+                    <p>The Deezer Clone app, integrated with Deezer's unique APIs, is a music application with rich features. Users can explore their desired music genres and add their favorite songs to the library for listening at any time later.</p>
+                    <a href="https://github.com/Skywalkerkan/DeezerApp" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/expenseKapak.png">
+                <div class="layer">
+                    <h3>Expense Tracker App</h3>
+                    <p>Expense Tracker is a comprehensive income and expense tracking application offering support in 8 different languages. It intelligently categorizes incomes and expenses over time, presenting them with user-friendly visuals through graphs. Additionally, users can conveniently save highlighted incomes or expenses to their phones for quick access.</p>
+                    <a href="https://github.com/Skywalkerkan/ExpenseTracker" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Skywalkerkan" target="_blank" class="btn">See more</a>
+
+    </div>
+
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>  erkancosar2023@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/skaywalkerkan/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Skywalkerkan"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Özgeçmiş - Cv.pdf" download class="btn btn2">Dowload Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>Made by Honeyed Cheek <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    var barsIcon = document.querySelector(".fa-bars");
+    var timesIcon = document.querySelector(".fa-times");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+        barsIcon.style.display = "none";
+        timesIcon.style.display = "block";
+    }
+    
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+        barsIcon.style.display = "block";
+        timesIcon.style.display = "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        barsIcon.addEventListener("click", openmenu);
+        timesIcon.addEventListener("click", closemenu);
+    });
+</script>
+
+
+
+
+</body>
+</html>
